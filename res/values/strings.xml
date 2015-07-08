@@ -505,7 +505,7 @@
         <item quantity="other">%d selected</item>
     </plurals>
 
-    <string name="appwidget_text">EXAMPLE</string>
+    <string name="appwidget_title_content_description">widget</string>
     <string name="configure">Configure</string>
     <string name="add_widget">Add widget</string>
 
