@@ -718,6 +718,7 @@ public class Preferences extends PreferenceActivity {
         SharedPreferences.Editor editor = appPrefs.edit();
         editor.putString(INSTANT_UPLOAD_PATH, mUploadPath)
                 .putString(INSTANT_UPLOAD_PATH_ACCOUNT, mUploadPathAccount);
+        editor.putString("instant_upload_path_account", mUploadPathAccount);
         editor.commit();
     }
 
@@ -742,6 +743,7 @@ public class Preferences extends PreferenceActivity {
         SharedPreferences.Editor editor = appPrefs.edit();
         editor.putString(INSTANT_VIDEO_UPLOAD_PATH, mUploadVideoPath)
                 .putString(INSTANT_VIDEO_UPLOAD_PATH_ACCOUNT, mUploadVideoPathAccount);
+        editor.putString("instant_video_upload_path_account", mUploadVideoPathAccount);
         editor.commit();
     }
 }
