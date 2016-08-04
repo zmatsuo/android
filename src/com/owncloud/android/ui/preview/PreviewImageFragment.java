@@ -19,8 +19,6 @@
  */
 package com.owncloud.android.ui.preview;
 
-import java.lang.ref.WeakReference;
-
 import android.accounts.Account;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -50,6 +48,8 @@ import com.owncloud.android.ui.dialog.RemoveFilesDialogFragment;
 import com.owncloud.android.ui.fragment.FileFragment;
 import com.owncloud.android.utils.BitmapUtils;
 import com.owncloud.android.utils.DisplayUtils;
+
+import java.lang.ref.WeakReference;
 
 import third_parties.michaelOrtiz.TouchImageViewCustom;
 
@@ -225,8 +225,9 @@ public class PreviewImageFragment extends FileFragment {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.file_actions_menu, menu);
 
-        MenuItem item = menu.findItem(R.id.action_set_as_wallpaper);
-        item.setVisible(getFile().isDown());
+        if(getFile().isDown() && getFile().isImage()) {
+            menu.findItem(R.id.action_set_as_wallpaper).setVisible(false);
+        }
     }
 
     /**
