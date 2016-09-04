@@ -35,7 +35,7 @@ env:
   - secure: ydxZrS7+1ht3p1tC6DE9W9bjLQGjMkwFBwyhNmcdEM6538kN8ZCBQe7NxSsCrC1nSDBLQ17Cziv0XJHl/pCfPrbkrPPgVFpjDfPeqC2zcGcCNcFQUEylXCvQ4uRU2hKL6dPqCsOQ57Pv3qwpPoprl/usoN5Wh8V7BKplU88ZaYM=
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
    # via the "travis encrypt" command using the project repo's public key
-   - secure: "zUo2D1qm8B49rQZfQvenlydMO6eWLDlw1zhdTNTzwqJ030ojqI7OCq0u8GJzVkfiqmN07RZHsuGNpjozmNsMgCj8yQkS5+1LXq0ZM4Nz5UOVxQ+KjsEA5XxEWao3Q+wR+YWXfNWlCVXR1INecHhhxF+6SOmPCpEhd7V5Leq3aU8="
+  - secure: "zUo2D1qm8B49rQZfQvenlydMO6eWLDlw1zhdTNTzwqJ030ojqI7OCq0u8GJzVkfiqmN07RZHsuGNpjozmNsMgCj8yQkS5+1LXq0ZM4Nz5UOVxQ+KjsEA5XxEWao3Q+wR+YWXfNWlCVXR1INecHhhxF+6SOmPCpEhd7V5Leq3aU8="
   matrix:
   - ANDROID_TARGET=android-23 ANDROID_ABI=armeabi-v7a
 addons:
